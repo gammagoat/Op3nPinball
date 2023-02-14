@@ -23,7 +23,7 @@ namespace Op3nPinball.Utils.GUI
         // String of the pubsub topic. This is the unique string the user will subscribe to
         private string _ntfyTopic;
         // String of the nfty server. We default to the public instance.
-        private string _ntfyServer = "http://ntfy.sh/";
+        private string _ntfyServer = "https://ntfy.sh/";
         
         void Awake() {
             // Assign the singleton
@@ -60,7 +60,7 @@ namespace Op3nPinball.Utils.GUI
         /// </summary>
         /// <param name="eventName">Default eventName string.</param>
         /// <param name="eventData">string of topic as an object. If not set, will use
-        /// http://ntfy.sh</param>
+        /// https://ntfy.sh</param>
         public void SetNtfyServerEventHandler(string eventName, object eventData)
         {
             _ntfyServer = (string)eventData; 
